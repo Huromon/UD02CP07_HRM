@@ -48,6 +48,7 @@ public class Nodo extends Thread{
         }
 
         int med =lista.size()/2;
+        // pense que se tenia que usar/incluir el metodo añadir(l,d,h) por lo que no use subList. "el cual no requiere de un metodo".
         List<Integer> ramaA = añade(lista,0,med);
         List<Integer> ramaB = añade(lista,med,lista.size());
         Nodo nodoA = new Nodo(ramaA);
